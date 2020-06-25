@@ -23,7 +23,7 @@ WORKDIR /var/www/
 #    && mkdir moodledata \
 #    && chown -R www-data: moodledata 
 
-COPY moodle /var/www/html/ \
+ADD moodle/ /var/www/html/ \
     && chown -R www-data: html \
     && mkdir moodledata \
     && chown -R www-data: moodledata 
